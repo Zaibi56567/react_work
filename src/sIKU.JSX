@@ -6,6 +6,22 @@ export default function sIKU() {
       <h1>Hi</h1>
       <h1>Hi</h1>
       <h1>Hi</h1>
+      <h1>Hi</h1>
+      <h1>Hi</h1>
+      <h1>Hi</h1>
+      <h1>Hi</h1>
+      <h1>Hi</h1>
+      <h1>Hi</h1>
+      <h1>Hi</h1>
+      <h1>Hi</h1>
+      <h1>Hi</h1>
+      <h1>Hi</h1>
+      <h1>Hi</h1>
+      <h1>Hi</h1>
+      <h1>Hi</h1>
+      <h1>Hi</h1>
+      <h1>Hi</h1>
+      <h1>Hi</h1>
     </div>
   )
 }
