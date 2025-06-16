@@ -1,0 +1,247 @@
+.fourth-div-container {
+    padding: 80px 120px;
+    background-color: #fff;
+    font-family: Urbanist, sans-serif;
+}
+
+.fourth-div-header {
+    margin-bottom: 60px;
+}
+
+.what-we-do {
+    background-color: #f0f6ff;
+    color: #0d6efd;
+    font-family: Urbanist, sans-serif;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-family: Urbanist, sans-serif;
+}
+
+.header-content h2 {
+    font-size: 42px;
+    color: #0a142f;
+    font-family: Urbanist, sans-serif;
+    font-weight: bolder;
+    /* text-decoration: ; */
+    max-width: 500px;
+    letter-spacing: 1px;
+}
+
+.see-all-btn {
+    background-color: #0d6efd;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 45px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.see-all-btn:hover {
+    background-color: black;
+    transform: scale(1.05);
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.service-card {
+    position: relative;
+    height: 400px;
+    width: calc(25% - 18px); /* 4 cards per row with gap consideration */
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+    background-size: cover;
+    background-position: center;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7));
+}
+
+.service-icon {
+    position: absolute;
+    bottom: 80px;
+    left: 20px;
+    color: white;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #60697d;
+    transition: all 0.3s ease;
+}
+
+.service-icon svg {
+    width: 35px;
+    height: 35px;
+}
+
+.service-card:hover .service-icon {
+    transform: translateY(-10px);
+    background-color: #0b5ed7;
+}
+
+.service-card h3 {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    color: white;
+    font-size: 22px;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover h3 {
+    transform: translateY(-20px);
+}
+
+.service-card p {
+    position: absolute;
+    bottom: -0px;
+    left: 20px;
+    color: white;
+    font-size: 14px;
+    margin: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover p {
+    bottom: 27px;
+    opacity: 1;
+}
+
+.service-card:nth-child(1) {
+    background: url('https://gerow-react.vercel.app/static/media/h2_services_img01.656b06abf434431ed318.jpg') center/cover;
+}
+
+.service-card:nth-child(2) {
+    background: url('https://gerow-react.vercel.app/static/media/h2_services_img02.c85ab8cc6786b591885f.jpg') center/cover;
+}
+
+.service-card:nth-child(3) {
+    background: url('https://gerow-react.vercel.app/static/media/h2_services_img03.003d121eaf2e37223e04.jpg') center/cover;
+}
+
+.service-card:nth-child(4) {
+    background: url('https://gerow-react.vercel.app/static/media/h2_services_img04.04c38c42c22d298d845b.jpg') center/cover;
+}
+
+@media (max-width: 1200px) {
+    .service-card {
+        width: calc(50% - 12px); /* 2 cards per row */
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        width: 100%; /* 2 cards per row */
+        height: 300px;
+    }
+    
+    .fourth-div-container {
+        padding: 40px 20px;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .header-content h2 {
+        font-size: 28px;
+        max-width: 100%;
+    }
+
+    .service-icon {
+        bottom: 60px;
+        font-size: 28px;
+    }
+
+    .service-card h3 {
+        font-size: 20px;
+    }
+
+
+
+    
+}
+
+@media (max-width: 426px) {
+    .service-card {
+        width: 100%; /* 1 card per row */
+        height: 250px;
+    }
+    
+.service-card:hover .service-icon {
+    transform: translateY(-25px);
+    background-color: #0b5ed7;
+}
+
+.service-card h3 {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    color: white;
+    font-size: 22px;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover h3 {
+    transform: translateY(-20px);
+}
+
+.service-card p {
+    position: absolute;
+    bottom: -0px;
+    left: 20px;
+    color: white;
+    font-size: 14px;
+    margin: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover p {
+    bottom: 27px;
+    opacity: 1;
+}
+
+} 

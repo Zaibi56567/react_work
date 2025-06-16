@@ -1,0 +1,25 @@
+import React from 'react'
+import './Make Css/FirstDiv.css'
+import { FaArrowRightLong } from "react-icons/fa6";
+
+function FirstDiv() {
+  return (
+    <div className='col-md-12 d-flex first-div'>
+      <div className="col-md-5 first-div-1">
+        <h5 >We Are Expert In This Field</h5>
+        <h1>Get a Smart Way For Your Business</h1>
+        <p>Agilos helps you to convert your data into a strategic asset and get top-notch business insights.</p>
+        <h6>Our Services<FaArrowRightLong className='FaArrowRightLong'/></h6>
+      </div>
+      <div className="col-md-3">
+        <img src="data:image/png;base64,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" alt="" className='img2' />
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGsAAABdCAYAAACinJi8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQvSURBVHgB7Z1NUhpRFIXva38KZ7qCkB1oyphkpjvQcqAwiawguoLACpQVUClLYGLhDnRmxFR0B5IVSJxIFWW/vGvT+GyJg9zbFF05X1UrYPtxoIFBH7qvqdd/rBOFNXIYYw4KhfcVEuKcn53zwBjqWhtWi8WPBySg2Wx/CUMqsy8IgvLW1vI3EuI7rbV7xeKHExIwjoym0WjfuNvz8Qq93sxCqbTUJQG+k+/o/n7m7b86a7Wr+VyufxtfZ9/29soCCdB2jitjYC3NkzK+U9uv4cvleuqP2SetjIH7uKp4d1KVvqsYY2z16ZqtSJzR/9qK7yMhhcKnju9xHzFVEpBWRt4eQ2Ockd9yjcZ5nhTRdrKPF1JE25mFjAAAAAAAAAAAAAAAgIzCOwqPjtqLpEitdp7X3ZGr60vDmXbGoNG4/MolVxDQVbN5sU8KRM4pV0BO3fBlEqLtY5rNy/3YWa9/3yUh48ho6vX2rWshh7vgZ2en85ub736RANcUW/+6pH1ONqZS3yjnJDbF0buJN9STM0iudHdnfpMQV5qJC8xXfB2NgvQVv9ih4ev1ct2kPzDmYcNd5laSv9yyp/NE2JKWk//XZdyLfe63uIX1mt2B86FEArKQEQAAAAAAAAAAAAAAAMC44Jb48PBylRTRdv7PGeMW/7Ep5pZ4etqeumayRQr4TldE1kgIN6ZPPr0WVtOZRkZ+7tjJCztNstVNoymWONNoike1sJpNMVMorBgSMLIpdsXWtb9SCk1xR+rUboq5hdVudpMZSciojG5j9UuDDdYhLigVmmLnXGOnezVc8ykBFI4pjjOehWF/g4RoO7OQEQAAAAAAAAAAAAAAAMAYeOxcuN2cmjLzxeLyCSmh7azXL9Zdv0NaPu6gZmf768YE3axkDLjh5HbTmLDlSsNTUkDb2WxetIwxrYFP3Dwzc3P9U9fA1tipcSz1ODK6Psvuen9fPT7++YaEaDr51WWtWfdu2pGehpRbWNcTLcbXnV90AHjke56RhCQzug/BnWdNMbeRGk0xPW9KO5KvCXAJl3ZTTMJmV9s3yjk8ptgYe8ILN7w6xxQ/rLkfZ+zUaDhdxiVNX/QC6A8zDvJOjC92Do73VnMCAAAAAAAAAAAAAAAyTFamvpEyaTxmUsZ3Gm9MrbvRlDVG33ojW1Wcvo/PDCodpctEh5LaMl8OgmBHOqqWfdzjpZSxw+N0X4y+nfQTGktH6f7NmcnRt5N4QuOEe34ST2ic8KmPvo3Lxz3vporOExFWtJz+WNn4BMkkJOkk4QmI08joj+d9kRFjZSfPl5YTAAAAAAAAAAAAAACQQbKxk/Q8r59R15l2xuHoW150R99GTs3Rt1q+pFNz9K1mxnj0bZwRo28pQ01xciWMvpU70mjKH5tizTG1Mf4Y2EkefRvl48WKmt3IF1bSzvgHOXp1xEBDvlEAAAAASUVORK5CYII=" alt="" className='img3'/>
+      </div>
+      <div className="col-md-4">
+         <img src="https://gerow-react.vercel.app/static/media/h2_banner_img.db2e60143e4086f69b3d.png" alt="" className='img1'/>
+      </div>
+    </div>
+  )
+}
+
+export default FirstDiv

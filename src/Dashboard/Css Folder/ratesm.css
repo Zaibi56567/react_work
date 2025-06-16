@@ -1,0 +1,12 @@
+.rcard{
+    background-color: #09183b;
+    border-radius:50px;
+    height: auto;
+    font-size: 13px;
+    padding: 10px 10px 10px 20px ;
+    color: white;
+    margin-top: 15px;
+}
+.ratesm{
+    justify-content: space-evenly;
+}

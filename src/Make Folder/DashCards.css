@@ -1,0 +1,77 @@
+.dashcards-row {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 32px;
+  justify-content: space-between;
+}
+
+.dashcard {
+  background: linear-gradient(135deg, #16213e 80%, #1e2a4a 100%);
+  border-radius: 20px;
+  padding: 24px 32px 20px 24px;
+  display: flex;
+  align-items: center;
+  min-width: 260px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10);
+  transition: transform 0.18s, box-shadow 0.18s;
+  cursor: pointer;
+}
+
+.dashcard:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px 0 #2563eb55;
+}
+
+.dashcard-info {
+  flex: 1;
+}
+
+.dashcard-title {
+  color: #bfc9e0;
+  font-size: 15px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.dashcard-value-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.dashcard-value {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.dashcard-change {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 2px;
+}
+
+.dashcard-icon {
+  margin-left: 22px;
+  background: #2563eb;
+  border-radius: 12px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+}
+
+@media (max-width: 1100px) {
+  .dashcards-row {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+  .dashcard {
+    min-width: 180px;
+    padding: 18px 16px 16px 16px;
+  }
+} 

@@ -1,0 +1,233 @@
+.nav-2 {
+  height: 50px;
+  width: 100%;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-2 span {
+  font-size: 25px;
+}
+
+.menu-icon {
+  font-size: 25px;
+  color: black;
+  margin-left: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .s1 {
+    display: none;
+  }
+
+  .contact-sec {
+    display: none;
+  }
+
+  .drop-sec {
+    width: 100%;
+  }
+}
+
+@media (max-width: 431px) {
+  .drop-sec {
+    height: 50%;
+  }
+}
+
+
+.full-div {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: calc(100dvh - 70px);
+  background-color: white;
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+.contact-sec {
+  height: 100%;
+  padding: 70px;
+  background-image: url('https://images.pexels.com/photos/2098427/pexels-photo-2098427.jpeg?cs=srgb&dl=pexels-eberhardgross-2098427.jpg&fm=jpg');
+  background-size: cover;
+  color: white;
+  overflow: hidden;
+  animation: contactSwipeIn 0.5s ease-in-out forwards;
+}
+
+.contact-sec h1 {
+  font-size: 50px;
+}
+
+.contact-sec h2 {
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.contact-sec p {
+  font-size: 20px;
+}
+
+.icons {
+  position: relative;
+  top: 120px;
+}
+
+.icons i {
+  margin-left: 30px;
+  color: white;
+  font-size: 20px;
+}
+
+
+.drop-sec {
+  height: 100%;
+  padding: 70px;
+  background-color: aliceblue;
+  overflow-y: auto;
+  animation: dropSwipeIn 0.5s ease-in-out forwards;
+}
+
+.drop-sec ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.drop-sec li {
+  padding: 10px 0;
+  font-size: 70px;
+  cursor: pointer;
+  animation: faderight 1s ease-in-out;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submenu {
+  list-style: none;
+  padding: 10px 15px;
+  margin-top: 5px;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.submenu li {
+  padding: 5px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+.close-btn:hover {
+  color: rgba(255, 0, 0, 0.462);
+}
+
+
+@keyframes contactSwipeIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes contactSwipeOut {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes dropSwipeIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes dropSwipeOut {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes faderight {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.closing .contact-sec {
+  animation: contactSwipeOut 0.5s ease-in-out forwards;
+}
+
+.closing .drop-sec {
+  animation: dropSwipeOut 0.5s ease-in-out forwards;
+}
+
+
+.content-wrapper.fade-in {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.content-wrapper.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
